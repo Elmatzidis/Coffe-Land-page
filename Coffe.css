@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  background-color: #dfd7bf;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 30px;
+  z-index: 1;
+  color: #3f2305;
+}
+
+.main-menu {
+  margin-right: 50px;
+}
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li {
+  position: relative;
+  margin-right: 50px;
+  padding-bottom: 2px;
+  font-size: 30px;
+}
+
+.main-menu ul li a{
+    color: #3f2305;
+}
+
+section {
+  height: 80vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-b,
+.section-d {
+  background: #fff;
+}
+
+.main-content {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  display: flex;
+}
+
+.main-content-text {
+  margin-right: 270px;
+}
+.main-content h1 {
+  font-size: 50px;
+  text-decoration: overline #3f2305;
+}
+
+.main-content p {
+  font-size: 25px;
+  margin: 40px 20px;
+  color: #3f2305;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.main-content-text{
+    box-shadow: 0px 5px 15px black;
+}
+.main-content-container img {
+    border-radius: 50%;
+    filter: drop-shadow(0px 10px 10px black);
+}
+
+.btn {
+  background: transparent;
+  font-size: 42.5px;
+  box-shadow: 0px 5px 10px black;
+  cursor: pointer;
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  left: 20%;
+  border-radius: 30px 2px;
+  transition: 250ms;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  color: wheat;
+  border-color: #aaa;
+  border-radius: 2px 30px;
+}
+
+.btn-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg,wheat,#3f2305,#3f2305,wheat);
+  background-size:300%;
+  transform: translatex(250px);
+  transition: 350ms;
+}
+
+.btn:hover img{
+    animation: shake 1s ease-in-out 400ms alternate ;
+}
+
+.btn-hover img {
+  position: absolute;
+  left: 30%;
+  bottom: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.btn:hover .btn-hover {
+  transform: translatex(0px);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  60%{
+    transform: rotate(-15deg);
+  }
+  80%{
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
